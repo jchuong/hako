@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Node 13.14.0 - use Node Version Manager or equivalent
+Node 19.8.1 - use Node Version Manager or equivalent
 
 ## Developing
 
