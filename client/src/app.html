@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width" />
 		%sveltekit.head%
 		<script>
+			// Initiate theme to prevent flicker
 			let theme = 'light';
 			if (localStorage.getItem('theme')) {
 				theme = localStorage.getItem('theme');
