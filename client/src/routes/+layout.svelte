@@ -1,11 +1,6 @@
 <script lang="ts">
 	import '@picocss/pico';
-
-	let isDarkMode = false;
-    function handleTheme() {
-        const newTheme = isDarkMode ? 'light' : 'dark';
-        document.getElementById('root')?.setAttribute('data-theme', newTheme);
-    };
+	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
 </script>
 
 <header class="container-fluid">
@@ -18,14 +13,7 @@
 		</ul>
 		<ul>
 			<li>
-				<label
-					>Dark mode <input
-						type="checkbox"
-						role="switch"
-						bind:checked={isDarkMode}
-						on:click={handleTheme}
-					/></label
-				>
+				<ThemeSwitcher />
 			</li>
 		</ul>
 	</nav>

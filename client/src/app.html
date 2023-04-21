@@ -5,6 +5,16 @@
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		%sveltekit.head%
+		<script>
+			// Initiate theme to prevent flicker
+			let theme = 'light';
+			if (localStorage.getItem('theme')) {
+				theme = localStorage.getItem('theme');
+			} else {
+				theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+			}
+			document.getElementById('root').setAttribute('data-theme', theme);
+		</script>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
