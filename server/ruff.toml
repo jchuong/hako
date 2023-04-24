@@ -1,1 +1,2 @@
-exclude = ['settings.py', 'migrations']
+exclude = ["settings.py", "migrations"]
+select = ["I"]

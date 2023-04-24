@@ -4,7 +4,7 @@ from django.shortcuts import get_object_or_404
 from ninja import NinjaAPI
 
 from hako.apps.tags.models import Tag
-from hako.apps.tags.schema import TagIn, TagUpdateIn, TagOut
+from hako.apps.tags.schema import TagIn, TagOut, TagUpdateIn
 
 api = NinjaAPI()
 
