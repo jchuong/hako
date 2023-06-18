@@ -1,6 +1,6 @@
 <script lang="ts">
 	// TODO: Get types
-	export let tags: { name: string, id: number }[];
+	export let tags: { name: string; id: number }[];
 </script>
 
 <ul>
