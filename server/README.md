@@ -13,4 +13,4 @@ Install `poetry` for dependency management
 Run `poetry install` to install packages
 Run `poetry shell` to enter the virtualenv
 
-Run `python manage.py runserver` to start the server.
+Run `python manage.py runserver --ipv6` to start the server.
