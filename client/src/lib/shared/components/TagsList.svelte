@@ -1,6 +1,7 @@
 <script lang="ts">
-	// TODO: Get types
-	export let tags: { name: string; id: number }[];
+	import type { components } from '$lib/shared/api/types.d.ts';
+	// TODO: Just remove this..
+	export let tags: Array<components['schemas']['TagOut']>;
 </script>
 
 <ul>
