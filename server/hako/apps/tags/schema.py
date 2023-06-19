@@ -13,6 +13,9 @@ class TagUpdateIn(Schema):
 
 
 class TagOut(ModelSchema):
+    # This is required, but OpenAPI doesn't think so
+    id: int
+
     class Config:
         model = Tag
         model_fields = ["id", "name"]
