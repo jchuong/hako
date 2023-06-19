@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import TagsList from '$lib/shared/components/TagsList.svelte';
 
 	export let data: PageData;
 </script>
@@ -12,5 +11,9 @@
 {#if data.error}
 	<p>{data.error}</p>
 {:else}
-	<TagsList tags={data.tags} />
+	<ul>
+		{#each data.tags as tag (tag.id)}
+			<li>{tag.name}</li>
+		{/each}
+	</ul>
 {/if}
